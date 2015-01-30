@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar posición"
+        android:id="@+id/sendPosition"
+        android:layout_marginTop="66dp"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar SMS"
+        android:id="@+id/sendSMS"
+        android:layout_below="@+id/sendPosition"
+        android:layout_alignLeft="@+id/sendPosition"
+        android:layout_alignStart="@+id/sendPosition" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simular"
+        android:id="@+id/simulateButton"
+        android:layout_below="@+id/phoneText"
+        android:layout_alignRight="@+id/sendSMS"
+        android:layout_alignEnd="@+id/sendSMS"
+        android:layout_marginTop="38dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/phoneText"
+        android:layout_below="@+id/labelPhone"
+        android:layout_centerHorizontal="true"
+        android:selectAllOnFocus="true"
+        android:text="944916626" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Número asociado"
+        android:id="@+id/labelPhone"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
